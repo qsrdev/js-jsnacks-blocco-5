@@ -16,4 +16,15 @@ const mele = [
   { nome: "Mela delle Fate", diametro: 7.0, peso: 144 },
 ];
 
+let melegrandi = [];
+let melepiccole = [];
+
 // A partire dall'array fornito, crea due array. Uno con le mele di almeno 7 cm di diametro. L'altro con le restanti.
+mele.forEach((curApple) => {
+  if (curApple.diametro >= 7) {
+    melegrandi.push(curApple);
+  } else {
+    melepiccole.push(curApple);
+  }
+});
+console.log(melegrandi, melepiccole);
